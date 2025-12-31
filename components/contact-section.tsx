@@ -74,7 +74,7 @@ export function ContactSection() {
                 <span className="text-sm font-medium text-foreground">Available for Opportunities</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Open to research internships, full-time positions, and exciting collaborations in AI/ML.
+                Open to full-time positions, and collaborations in AI/ML.
               </p>
             </div>
           </div>

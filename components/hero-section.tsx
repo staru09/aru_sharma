@@ -19,7 +19,7 @@ export function HeroSection() {
         <div className="space-y-6">
           <div className="aspect-square overflow-hidden rounded-lg border-4 border-amber-100">
             <Image
-              src="me.jpg"
+              src="me_3.jpg"
               alt="Aru Sharma"
               width={300}
               height={300}

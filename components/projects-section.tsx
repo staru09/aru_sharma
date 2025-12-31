@@ -3,39 +3,39 @@ import Link from "next/link"
 
 const projects = [
   {
-    title: "Multimodal RAG for Video Understanding",
+    title: "Multimodal Emotion Recognition",
     description:
-      "Developed a Multimodal Retrieval-Augmented Generation system that ingests video files, extracts key frames and audio, and encodes them into a shared semantic space.",
+      "Implemented a multimodal emotion recognition system using late and gated fusion techniques on audio and video embeddings to classify emotional states.",
     features: [
-      "CLIP-based vision models for visual embeddings",
-      "Whisper ASR for transcribing audio",
-      "Unified multimodal representation in vector database",
+      "Whisper-large-v3 for audio feature extraction",
+      "V-JEPA for video visual embedding extraction",
+      "Gated Fusion Network for combining modalities",
     ],
-    technologies: ["Python", "CLIP", "Whisper ASR", "OpenAI GPT-Vision", "Deep Learning", "Vector Databases"],
-    github: "#",
+    technologies: ["multimodal fusion", "world models", "ffmpeg"],
+    github: "https://github.com/staru09/Multimodal_emotion_",
   },
   {
-    title: "Multi-Agent Researcher System",
+    title: "Multi-Agent Research Tool",
     description:
-      "Developed an autonomous multi-agent system that takes a user research query and generates a structured, citation-backed research summary.",
+      "Developed an autonomous multi-agent system that facilitates interaction and collaboration of specialized agents to perform comprehensive research tasks.",
     features: [
       "DuckDuckGo Search Agent for web articles",
       "ArXiv Agent for academic papers",
-      "Writer Agent for synthesis and compilation",
+      "Supervisor Agent for task coordination",
     ],
-    technologies: ["Python", "LangGraph", "LangChain", "OpenAI", "DuckDuckGo API", "ArXiv API", "Agentic AI"],
-    github: "#",
+    technologies: ["LangGraph", "OpenAI"],
+    github: "https://github.com/staru09/multi_agent_research_tool",
   },
   {
     title: "Bitcoin-ASR-Bench",
-    description: "Benchmarked models from Open-ASR leaderboard for transcribing talks from bitcoin conferences.",
+    description: "Benchmarked models from Open-ASR leaderboard for transcribing talks from bitcoin conferences with GPU acceleration support.",
     features: [
-      "Automatic channel scraping for talks",
-      "Pre-processing pipeline for wav files",
-      "Model evaluation and comparison",
+      "Multi-model support and evaluation",
+      "GPU acceleration for efficient processing",
+      "Chunked processing for long audio files",
     ],
-    technologies: ["Python", "Huggingface", "Moshi", "Nvidia-Nemo", "Ffmpeg"],
-    github: "#",
+    technologies: ["Huggingface", "Nvidia-Nemo", "CUDA", "FFmpeg"],
+    github: "https://github.com/staru09/Bitcoin-Asr-Bench",
   },
 ]
 
@@ -76,7 +76,7 @@ export function ProjectsSection() {
               <div className="mt-auto">
                 <p className="mb-2 text-xs font-medium uppercase tracking-wider text-muted-foreground">Technologies:</p>
                 <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech) => (
+                  {project.technologies.filter(Boolean).map((tech) => (
                     <span
                       key={tech}
                       className="rounded-full border border-border bg-muted px-2 py-0.5 text-xs font-medium text-muted-foreground"

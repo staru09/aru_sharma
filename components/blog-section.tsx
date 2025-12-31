@@ -13,7 +13,7 @@ export function BlogSection() {
   return (
     <section id="blog" className="border-t border-border">
       <div className="container mx-auto max-w-5xl px-6 py-16 md:py-24">
-        <h2 className="mb-2 text-3xl font-serif text-foreground">Connectionism</h2>
+        <h2 className="mb-2 text-3xl font-serif text-foreground">Interaccionismo</h2>
         <p className="mb-12 text-muted-foreground italic">Shared thoughts on AI, open-source, and building systems</p>
 
         <div className="space-y-6">
