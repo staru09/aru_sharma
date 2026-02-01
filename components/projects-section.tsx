@@ -45,7 +45,7 @@ const projects = [
       "Compares latency and throughput across providers",
       "Tried simulating real-world usage patterns using different concurrency levels",
     ],
-    technologies: ["Vllms", "SG-lang", "ML-Infrastructure"],
+    technologies: ["vLLM", "SGLang", "ML-Infrastructure"],
     github: "https://github.com/staru09/llm_infra_bench",
   }
 ]
